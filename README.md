@@ -1,68 +1,65 @@
-# Neural Network from Scratch
+﻿# Neural Network from Scratch
 
-This folder contains a small, beginner-friendly collection of Python scripts that demonstrate how neural networks work without using a high-level framework. The examples focus on the core building blocks: basic neurons, layers, matrix operations, and activation functions.
+This repository is a beginner-friendly introduction to neural networks built entirely with Python and NumPy. The scripts focus on the core ideas behind neural networks without relying on a high-level framework.
 
 ## What this project covers
 
-These scripts introduce the fundamentals of neural networks, including:
+These examples walk through the building blocks of neural networks:
 
-- A single neuron and its computation
-- Multiple neurons in parallel
-- Vectorized operations with NumPy
-- A simple layer of neurons
-- A class-based dense layer implementation
-- ReLU activation
+- A single neuron and how it computes an output
+- Multiple neurons working together
+- Vectorized math using NumPy
+- Layers of neurons
+- Reusable class-based layers
+- ReLU and Softmax activation functions
+- A small complete neural network example
 
 ## Project structure
 
 - 1.neuron.py - Demonstrates a single neuron with manual computation.
-- 2.multiple_neurons.py - Shows how multiple neurons are computed together.
+- 2.multiple_neurons.py - Shows how multiple neurons are computed in parallel.
 - 3.using_numpy_in_nn.py - Uses NumPy for efficient matrix-based neural network calculations.
-- 4.layer_of_nurons.py - Builds a simple two-layer neural network example.
-- 5.using_classes_for_nn.py - Implements a reusable dense layer using a Python class.
-- 6.ReLU_activation.py - Demonstrates the ReLU activation function.
+- 4.layer_of_neurons.py - Builds a simple layer-based neural network example.
+- 5.using_classes_for_nn.py - Implements a reusable dense layer using Python classes.
+- 6.ReLU_and_Softmax.py - Demonstrates ReLU and Softmax activation functions.
+- 7.full_neural_network_no_loss.py - Shows a small neural network forward pass using layers and activations.
 - basics/ - Extra NumPy examples for broadcasting and summation.
 - data/ - Sample datasets used for learning and experimentation.
 
 ## Requirements
 
-Make sure you have Python installed, then install NumPy if needed:
+Make sure Python is installed, then install the required packages:
 
-```bash
-pip install numpy
-```
-
-If you want to run the class-based example, you may also need the nnfs package:
-
-```bash
-pip install nnfs
-```
+`ash
+pip install numpy nnfs
+`
 
 ## How to run
 
 Run any script with Python, for example:
 
-```bash
+`ash
 python 1.neuron.py
-```
+`
 
 You can also try:
 
-```bash
+`ash
 python 3.using_numpy_in_nn.py
-python 4.layer_of_nurons.py
-```
+python 6.ReLU_and_Softmax.py
+python 7.full_neural_network_no_loss.py
+`
 
 ## Learning goals
 
 This project is intended for learners who want to understand:
 
 - how neurons compute outputs
-- how weights and biases affect results
+- how weights and biases influence results
 - how NumPy simplifies neural network math
 - how layers and activation functions fit together
+- how a basic network produces predictions
 
 ## Notes
 
-These examples are intentionally simple and educational. They are meant to build intuition rather than serve as a production-ready neural network implementation.
-
+These examples are intentionally simple and educational. They are designed to build intuition rather than serve as a production-ready neural network implementation.
